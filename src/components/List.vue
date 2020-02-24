@@ -14,7 +14,7 @@ export default {
   name: 'List',
 
   mounted: function () {
-      axios.get('http://jobagent.test/users')
+      axios.get('http://jobagent.dodajstrony.pl/users')
         .then(response => this.posts = response.data)
   },
 
