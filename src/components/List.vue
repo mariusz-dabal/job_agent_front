@@ -8,13 +8,12 @@
 </template>
 
 <script>
-import axios from 'axios'
 
 export default {
   name: 'List',
 
   mounted: function () {
-      axios.get('http://jobagent.dodajstrony.pl/users')
+      this.$http.get('http://jobagent.test/users')
         .then(response => this.posts = response.data)
   },
 
