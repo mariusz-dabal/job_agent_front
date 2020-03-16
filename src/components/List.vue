@@ -13,7 +13,7 @@ export default {
   name: 'List',
 
   mounted: function () {
-      this.$http.get('http://jobagent.test/users')
+      this.$http.get('/users')
         .then(response => this.posts = response.data)
   },
 

@@ -56,7 +56,7 @@ export default {
           console.log('submited')
           console.log(this.username)
           console.log(this.password)
-          this.$http.post('http://jobagent.dodajstrony.pl/login', {
+          this.$http.post('/login', {
               username: this.username,
               password: this.password,
           }).then(response => {
